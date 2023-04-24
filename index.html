@@ -15,10 +15,10 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
-    <!-- header -->
     <header class="header">
         <div class="container header-container">
             <nav class="header-nav">
@@ -36,9 +36,73 @@
                     <li><a href="tel:+110001111111" class="address-link link">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+            <button type="button" class="mob-menu-btn" data-menu-open><svg class="mob-menu-icon" width="32px"
+                    height="32px">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg></button>
+            <div class="mob-menu is-hidden" data-menu>
+                <button type="button" data-menu-close class="menu-close-btn"><svg class="menu-close-icon" width="8px"
+                        height="8px">
+                        <use href="./images/icons.svg#icon-Vector"></use>
+                    </svg>
+                </button>
+                <div>
+                    <nav>
+                        <ul class="mob-menu-list list">
+                            <li class="mob-menu-item"><a href="./index.html"
+                                    class="mob-menu-link link current">Studio</a>
+                            </li>
+                            <li class="mob-menu-item"><a href="./portfolio.html"
+                                    class="mob-menu-link link">Portfolio</a>
+                            </li>
+                            <li class="mob-menu-item"><a href="" class="mob-menu-link link">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <address class="address">
+                        <ul class="mob-menu-address-list list">
+                            <li class="mob-address-item"><a href="tel:+110001111111" class="mob-menu-phone link">+11
+                                    (000) 111-11-11</a></li>
+                            <li><a href="mailto:info@devstudio.com" class="mob-menu-email link">info@devstudio.com</a>
+                            </li>
+
+                        </ul>
+                    </address>
+                    <ul class="mob-soc-list list">
+                        <li class="mob-soc-item">
+                            <a href="" class="mob-soc-link link">
+                                <svg class="mob-soc-icon" width="24px" height="24px">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mob-soc-item">
+                            <a href="" class="mob-soc-link link">
+                                <svg class="mob-soc-icon" width="24px" height="24px">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mob-soc-item">
+                            <a href="" class="mob-soc-link link">
+                                <svg class="mob-soc-icon" width="24px" height="24px">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mob-soc-item">
+                            <a href="" class="mob-soc-link link">
+                                <svg class="mob-soc-icon" width="24px" height="24px">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
-    <!-- main -->
     <main>
         <section class="hero">
             <div class="container hero-container">
@@ -46,7 +110,7 @@
                 <button type="button" data-modal-open class="hero-btn">Order Service</button>
             </div>
         </section>
-        <section class="features">
+        <section class="features section">
             <div class="container">
                 <h2 hidden class="features-title">features</h2>
                 <ul class="features-list list">
@@ -103,20 +167,23 @@
             <div class="container">
                 <h2 class="services-title">What are we doing</h2>
                 <ul class="services-list list">
-                    <li class="services-item"><img src="./images/pc.jpg" width="360" alt="sites on PC"></li>
-                    <li class="services-item"><img src="./images/phone.jpg" width="360"
-                            alt="design of mobile applications">
+                    <li class="services-item"><img src="./images/pc.jpg" srcset="./images/pc-2x.jpg 2x" width="360"
+                            alt="sites on PC"></li>
+                    <li class="services-item"><img src="./images/phone.jpg" srcset="./images/phone-2x.jpg 2x"
+                            width="360" alt="design of mobile applications">
                     </li>
-                    <li class="services-item"><img src="./images/phone(1).jpg" width="360" alt="mobile applications">
+                    <li class="services-item"><img src="./images/phone(1).jpg" srcset="./images/phone(1)-2x.jpg 2x"
+                            width="360" alt="mobile applications">
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="workers">
+        <section class="workers section">
             <div class="container">
                 <h2 class="workers-title">Our Team</h2>
                 <ul class="workers-list list">
-                    <li class="workers-item"><img src="./images/markguerrero.jpg" width="264" alt="Mark Guerrero">
+                    <li class="workers-item"><img src="./images/markguerrero.jpg"
+                            srcset="./images/markguerrero-2x.jpg 2x" width="264" alt="Mark Guerrero">
                         <div class="workers-container">
                             <h3 class="workers-subject">Mark Guerrero</h3>
                             <p class="workers-text">Product Designer</p>
@@ -152,7 +219,8 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="workers-item"><img src="./images/tomford.jpg" width="264" alt="Tom Ford">
+                    <li class="workers-item"><img src="./images/tomford.jpg" srcset="./images/tomford-2x.jpg 2x"
+                            width="264" alt="Tom Ford">
                         <div class="workers-container">
                             <h3 class="workers-subject">Tom Ford</h3>
                             <p class="workers-text">Frontend Developer</p>
@@ -188,7 +256,8 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="workers-item"><img src="./images/camilagarcia.jpg" width="264" alt="Camila Garcia">
+                    <li class="workers-item"><img src="./images/camilagarcia.jpg"
+                            srcset="./images/camilagarcia-2x.jpg 2x" width="264" alt="Camila Garcia">
                         <div class="workers-container">
                             <h3 class="workers-subject">Camila Garcia</h3>
                             <p class="workers-text">Marketing</p>
@@ -224,7 +293,8 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="workers-item"><img src="./images/danielwilson.jpg" width="264" alt="Daniel Wilson">
+                    <li class="workers-item"><img src="./images/danielwilson.jpg"
+                            srcset="./images/danielwilson-2x.jpg 2x" width="264" alt="Daniel Wilson">
                         <div class="workers-container">
                             <h3 class="workers-subject">Daniel Wilson</h3>
                             <p class="workers-text">UI Designer</p>
@@ -263,7 +333,7 @@
                 </ul>
             </div>
         </section>
-        <section class="customers">
+        <section class="customers section">
             <div class="container">
                 <h2 class="customers-title">Customers</h2>
                 <ul class="customers-list list">
@@ -295,7 +365,6 @@
             </div>
         </section>
     </main>
-    <!-- footer -->
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-logo-container">
@@ -342,7 +411,8 @@
                 <form>
                     <div class="footer-subscribe-container">
                         <input type="email" name="user-email" class="input-email" placeholder="Email">
-                        <button type="submit" class="footer-subscribe-btn">Subscribe <svg width="24px" height="24px" class="footer-subscribe-icon">
+                        <button type="submit" class="footer-subscribe-btn">Subscribe <svg width="24px" height="24px"
+                                class="footer-subscribe-icon">
                                 <use href="./images/icons.svg#icon-telegram"></use>
                             </svg></button>
                     </div>
@@ -395,13 +465,16 @@
                             <svg class="click-icon" width="10px" height="8px">
                                 <use href="./images/icons.svg#icon-click"></use>
                             </svg>
-                        </span> I accept the terms and conditions of the <a href="" class="modal-link">Privacy Policy</a></label>
+                        </span> I accept the terms and conditions of the <a href="" class="modal-link">Privacy
+                            Policy</a></label>
                 </div>
                 <button type="submit" class="modal-submit-btn">Send</button>
             </form>
         </div>
     </div>
     <script src="./js/modal.js">
+    </script>
+    <script src="./js/mobile-menu.js">
     </script>
 </body>
 
