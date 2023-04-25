@@ -2,11 +2,20 @@
     .container {
         width: 428px;
     }
+
+    .hero-title {
+        min-width: 320px;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
+    }
+
+    .header {
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
     .header-link {
@@ -46,7 +55,7 @@
         content: '';
         position: absolute;
         left: 0;
-        top: 42px;
+        top: 53px;
         width: 100%;
         height: 4px;
         border-radius: 2px;
@@ -59,11 +68,15 @@
 
 
 
+    .address-item {
+        margin-bottom: 12px;
+    }
+
     .address-link {
         display: block;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
+        font-size: 12px;
+        line-height: calc(14 / 12);
         letter-spacing: 0.02em;
         color: #434455;
 
@@ -152,9 +165,35 @@
         width: 1128px;
     }
 
+    .header {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .current::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 45px;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background: #404BBF;
+    }
+
+
     .address-list {
         display: flex;
         gap: 40px;
+    }
+
+    .address-item {
+        margin-bottom: 0;
+    }
+
+    .address-link {
+        font-size: 16px;
+        line-height: calc(24 / 16);
     }
 
     .hero {

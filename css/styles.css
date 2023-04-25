@@ -137,13 +137,14 @@ img {
 
 
 .menu-close-btn {
-    background: #E7E9FC;
-    border: 1px solid #2E2F42;
+    background-color: #e7e9fc10;
+    border: 1px solid #2e2f4210;
     border-radius: 50%;
     position: absolute;
     top: 24px;
     right: 24px;
 }
+
 
 .menu-close-icon {
     stroke: #2E2F42;
@@ -177,6 +178,7 @@ img {
 
 
 .mob-menu-phone {
+    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: calc(40/36);
@@ -186,6 +188,7 @@ img {
 }
 
 .mob-menu-email {
+    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: calc(24 / 20);
@@ -257,7 +260,7 @@ img {
     text-transform: capitalize;
     color: #FFFFFF;
     margin-bottom: 72px;
-    min-width: 320px;
+
 }
 
 .hero-btn {
